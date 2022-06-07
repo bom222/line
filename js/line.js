@@ -210,7 +210,7 @@ $(function () {
   }
 
   //인디케이터 클릭이벤트 설정
-  $indicator.on("click", function () {
+  $indicator.on("click", function (evt) {
     nowIdx = $indicator.index($(this));
     if (oldIdx != nowIdx) {
       move(); // 슬라이드 함수 호출
